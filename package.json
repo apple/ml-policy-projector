@@ -1,0 +1,4 @@
+{
+  "name": "policy-projector-workspace",
+  "workspaces": ["policy-projector", "map-visualization-app/frontend"]
+}

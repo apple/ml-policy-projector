@@ -1,0 +1,37 @@
+citation-file-format: 1.2.0
+creator:
+  - family-names: Lam
+    given-names: Michelle S.
+  - family-names: Hohman
+    given-names: Fred
+  - family-names: Moritz
+    given-names: Dominik
+  - family-names: Bigham
+    given-names: Jeffrey P
+  - family-names: Holstein
+    given-names: Kenneth
+  - family-names: Kery
+    given-names: Mary Beth
+title: Policy Projector
+version: 1.0.0
+url: https://github.com/apple/ml-policy-projector
+preferred-citation:
+  type: conference-article
+  authors:
+    - family-names: Lam
+      given-names: Michelle S.
+    - family-names: Hohman
+      given-names: Fred
+    - family-names: Moritz
+      given-names: Dominik
+    - family-names: Bigham
+      given-names: Jeffrey P
+    - family-names: Holstein
+      given-names: Kenneth
+    - family-names: Kery
+      given-names: Mary Beth
+  title: 'Policy Maps: Tools for Guiding the Unbounded Space of LLM Behaviors'
+  year: 2025
+  journal: Symposium on User Interface Software and Technology
+  organization: ACM
+  doi: '10.1145/3746059.3747680'

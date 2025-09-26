@@ -1,0 +1,20 @@
+[project]
+name = "ml-policy-projector"
+version = "0.1.0"
+license = "Apple Sample Source Code"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets>=4.0.0",
+    "flask[async]>=3.1.2",
+    "flask-cors>=6.0.1",
+    "jupyter>=1.1.1",
+    "sentence-transformers>=5.1.0",
+    "text-lloom>=0.8.2.1",
+    "umap-learn>=0.5.9.post2",
+    "python-dotenv>=1.1.1",
+]
+
+[tool.uv]
+required-environments = ["sys_platform == 'darwin' and platform_machine == 'arm64'"]

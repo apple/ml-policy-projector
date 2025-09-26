@@ -1,0 +1,23 @@
+{
+  "name": "@apple/policy-projector",
+  "scripts": {
+    "dev": "npm run build -- --sourcemap=inline --watch",
+    "build": "vite build -c vite.config.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.1.4",
+    "@tailwindcss/postcss": "^4.1.12",
+    "autoprefixer": "^10.4.21",
+    "flowbite": "^3.1.2",
+    "flowbite-svelte": "^1.13.7",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.1.4"
+  },
+  "dependencies": {
+    "@anywidget/vite": "^0.2.2",
+    "active-table": "^1.1.7",
+    "svelte": "^5.38.6"
+  }
+}

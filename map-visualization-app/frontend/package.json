@@ -1,0 +1,36 @@
+{
+  "name": "map-visualization-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^6.1.0",
+    "@sveltejs/kit": "^2.37.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "flowbite": "^3.1.2",
+    "flowbite-svelte": "^1.13.7",
+    "flowbite-svelte-icons": "^3.0.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-svelte": "^3.4.0",
+    "sass-embedded": "^1.92.0",
+    "svelte-check": "^4.3.1",
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.1.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "@uwdata/mosaic-core": "^0.18.0",
+    "@uwdata/mosaic-sql": "^0.18.0",
+    "@uwdata/vgplot": "^0.18.0",
+    "active-table": "^1.1.7",
+    "embedding-atlas": "^0.8.0"
+  }
+}

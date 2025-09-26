@@ -1,0 +1,141 @@
+/*
+ * For licensing see accompanying LICENSE file.
+ * Copyright (C) 2025 Apple Inc. All Rights Reserved.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  --color-sidebar: #f9fafb;
+  --color-accent: #eb4f27;
+}
+
+:root {
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "Fira Mono", monospace;
+  --color-text: rgb(31 41 55);
+  --color-bg: #f9fafb;
+  --color-border-light: rgb(241, 242, 243);
+  --color-border: rgb(229, 231, 235);
+  --color-border-dark: rgb(209 213 219);
+  --color-accent: #eb4f27;
+  --color-accent-med: rgb(247, 152, 131);
+  --color-accent-light: rgb(255, 188, 173);
+  --color-accent-lightest: rgb(255, 241, 238);
+  --color-accent-2: rgb(39, 144, 235);
+  font-family: var(--font-body);
+  color: var(--color-text);
+
+  --header-height: 3rem;
+  --collabsed-bin-height: 3.5rem;
+  --content-height: calc(
+    100vh - var(--header-height) - var(--collabsed-bin-height)
+  );
+  --sidebar-content-width: 25rem;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 12pt;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 11pt;
+  color: var(--color-text);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 10pt;
+  color: var(--color-text);
+}
+
+p {
+  font-size: 11pt;
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+}
+
+.text-secondary {
+  color: rgb(60, 60, 67, 0.6);
+}
+
+.app-header {
+  height: var(--header-height);
+}
+
+.main-area {
+  position: absolute;
+  width: 100%;
+  height: var(--content-height);
+  z-index: 0;
+  overflow-y: hidden;
+}
+
+.mapOverlay text {
+  visibility: visible;
+  width: 572px;
+  height: 857px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.sidebar {
+  transition: 0.5s;
+}
+
+.sidebar-content {
+  height: var(--content-height);
+  width: var(--sidebar-content-width);
+}
+
+/* Concept List */
+.conceptRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.conceptRowName {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 5px;
+}
+
+/* Table */
+.tableWrapper {
+  overflow-y: auto;
+  display: block;
+}
+.tableCellHeader {
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 100px;
+  padding: 6px;
+}
+.tableCell {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 6px;
+}
+.tableCellContent {
+  max-height: 100px;
+  max-width: 300px;
+  overflow-y: scroll;
+}
+
+.fade {
+  transition: opacity 0.5s;
+}
